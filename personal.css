@@ -445,23 +445,25 @@ p {
     background-color: var(--primary-red) !important;
     color: var(--text-light) !important;
     border: 2px solid var(--accent-gold) !important;
+    padding: 12px;
+    border-radius: 4px;
+    appearance: none; /* Removes default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-#subject option {
-    background-color: var(--primary-red) !important;
-    color: var(--text-light) !important;
-    padding: 10px !important;
-}
-
-#subject:hover {
-    background-color: var(--dark-red) !important;
+/* Add custom dropdown arrow */
+#subject {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23ffd700' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 12px center !important;
+    background-size: 12px !important;
+    padding-right: 40px !important;
 }
 
 #subject:focus {
-    background-color: var(--primary-red) !important;
-    border-color: var(--accent-gold) !important;
-    outline: none !important;
-    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5) !important;
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-gold);
 }
 
 /* Contact Info */
