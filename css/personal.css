@@ -54,6 +54,18 @@ body, .section, .record-card, .navbar, .footer {
     z-index: 1000;
 }
 
+body {
+    background-color: #1a1a1a !important;
+}
+
+.section {
+    background-color: #1a1a1a !important;
+}
+
+.navbar {
+    background-color: #1a1a1a !important;
+}
+
 .navbar .container {
     display: flex;
     justify-content: space-between;
