@@ -21,6 +21,22 @@ body {
     padding: 0;
 }
 
+/* Ensure all containers have dark background */
+body, .section, .record-card, .navbar, .footer {
+    background-color: var(--secondary-black) !important;
+}
+
+/* Specific fix for sections */
+.section {
+    background-color: var(--secondary-black);
+}
+
+.section-alt {
+    background: var(--primary-red);
+    border-top: 3px solid var(--accent-gold);
+    border-bottom: 3px solid var(--accent-gold);
+}
+
 /* Header Styles */
 .header {
     background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
