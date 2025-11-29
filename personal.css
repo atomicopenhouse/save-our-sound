@@ -441,29 +441,25 @@ p {
     color: var(--accent-gold);
 }
 
-#subject {
-    background-color: var(--primary-red) !important;
-    color: var(--text-light) !important;
-    border: 2px solid var(--accent-gold) !important;
-    padding: 12px;
-    border-radius: 4px;
-    appearance: none; /* Removes default arrow */
-    -webkit-appearance: none;
-    -moz-appearance: none;
+#subject option {
+    background-color: #8b0000 !important;
+    color: #f0f0f0 !important;
+    font-size: 16px !important;
+    padding: 12px !important;
 }
 
-/* Add custom dropdown arrow */
-#subject {
-    background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='%23ffd700' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") !important;
-    background-repeat: no-repeat !important;
-    background-position: right 12px center !important;
-    background-size: 12px !important;
-    padding-right: 40px !important;
+/* Firefox specific */
+@-moz-document url-prefix() {
+    #subject option {
+        background-color: #8b0000 !important;
+        color: #f0f0f0 !important;
+    }
 }
 
-#subject:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--accent-gold);
+/* Webkit browsers (Chrome, Safari) - may not work */
+#subject option:checked {
+    background: linear-gradient(#8b0000, #8b0000) !important;
+    color: #f0f0f0 !important;
 }
 
 /* Contact Info */
