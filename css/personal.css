@@ -1,11 +1,11 @@
 :root {
     --primary-red: #8b0000;        /* Dark red /<!--testing for github-->/
     --secondary-black: #1a1a1a;    /* Very dark grey */
-    --accent-gold: #ffd700;        /* Gold accent */
-    --dark-red: #660000;           /* Even darker red */
-    --light-red: #ffcccc;          /* Light red for variations */
+    --accent-gold: #ffd700;        /* Gold accent for fancyness */
+    --dark-red: #660000;           /* Even darkier red */
+    --light-red: #ffcccc;          /* Light red for spice */
     --text-light: #f0f0f0;         /* Light text for dark backgrounds */
-    --text-dark: #333;             /* Dark text for light backgrounds */
+    --text-dark: #333;             /* Dark text for light backgrounds #visibility */
 }
 
 /* Import Jost font */
@@ -21,12 +21,11 @@ body {
     padding: 0;
 }
 
-/* Ensure all containers have dark background */
 body, .section, .record-card, .navbar, .footer {
     background-color: var(--secondary-black) !important;
 }
 
-/* Specific fix for sections */
+
 .section {
     background-color: var(--secondary-black);
 }
@@ -45,7 +44,7 @@ body, .section, .record-card, .navbar, .footer {
     margin-bottom: 2rem;
 }
 
-/* Navbar - Black background with larger text */
+/* Navbar - Black background*/
 .navbar {
     background: var(--secondary-black);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -74,7 +73,7 @@ body {
 }
 
 .logo {
-    font-size: 2rem; /* Larger logo */
+    font-size: 2rem; 
     font-weight: 700;
     color: var(--accent-gold);
     text-decoration: none;
@@ -102,7 +101,7 @@ body {
     color: var(--text-light);
     font-weight: 600;
     transition: color 0.3s;
-    font-size: 1.3rem; /* Larger nav text */
+    font-size: 1.3rem; 
     padding: 0.5rem 1rem;
     border-radius: 4px;
 }
@@ -114,11 +113,11 @@ body {
 }
 
 
-/* Hero Section with light red overlay */
+/* Hero Section */
 .hero {
     background: 
         linear-gradient(
-            rgba(255, 204, 204, 0.15), /* Light red transparent overlay */
+            rgba(255, 204, 204, 0.15), 
             rgba(255, 204, 204, 0.15)
         ),
         url('../img/heroimage.jpg');
@@ -165,7 +164,7 @@ body:not(.home-page) .header::before {
 }
 
 body {
-    font-size: 1.2rem; /* 20% larger base font size */
+    font-size: 1.2rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Jost", sans-serif;
@@ -215,7 +214,7 @@ p {
     transition: all 0.3s;
     font-weight: 600;
     font-family: "Jost", sans-serif;
-    font-size: 1.2rem; /* Larger button text */
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
 }
 
@@ -238,14 +237,14 @@ p {
 .why-vinyl-image {
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.15), /* 15% black transparent overlay */
+            rgba(0, 0, 0, 0.15), 
             rgba(0, 0, 0, 0.15)
         ),
-        url('../img/whymatter.jpg'); /* Your image path */
+        url('../img/whymatter.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px; /* Adjust height as needed */
+    height: 400px; 
     border-radius: 8px;
     border: 2px solid var(--accent-gold);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -263,10 +262,10 @@ p {
 .mission-image {
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.15), /* 15% black transparent overlay */
+            rgba(0, 0, 0, 0.15),
             rgba(0, 0, 0, 0.15)
         ),
-        url('../img/crate.jpg'); /* Your crate image path */
+        url('../img/crate.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -448,7 +447,7 @@ p {
     padding: 12px !important;
 }
 
-/* Firefox specific */
+/* Firefox specific cus it might not work */
 @-moz-document url-prefix() {
     #subject option {
         background-color: #8b0000 !important;
@@ -456,7 +455,7 @@ p {
     }
 }
 
-/* Webkit browsers (Chrome, Safari) - may not work */
+/* hrome, Safari, also may not work */
 #subject option:checked {
     background: linear-gradient(#8b0000, #8b0000) !important;
     color: #f0f0f0 !important;
@@ -518,7 +517,7 @@ p {
     margin: 0;
 }
 
-/* Search and Filter Styles */
+
 #recordSearch, #genreFilter {
     font-family: "Jost", sans-serif;
     font-size: 1rem;
@@ -609,12 +608,12 @@ p {
     padding-bottom: 0.5rem;
 }
 
-/* Remove white space by making containers full dark */
+/* no white allowed */
 .container {
     background-color: transparent;
 }
 
-/* Ensure all backgrounds are dark */
+/* darn only */
 body, .section, .record-card, .sidebar, .form-group input, .form-group textarea, .form-group select {
     background-color: var(--secondary-black);
 }

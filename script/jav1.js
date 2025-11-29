@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         });
 
-        // Check window size and adjust menu
+        // win size + adj
         function checkWindowSize() {
             if (window.innerWidth <= 768) {
                 mobileMenuBtn.style.display = 'block';
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('resize', checkWindowSize);
     }
 
-    // Smooth scrolling for anchor links
+    // ancor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form handling
+    // Contact form stuff
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // Basic validation
+            // form validation
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
@@ -62,13 +62,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Simulate form submission
+            // form submist
             alert('Thank you for your message! We will get back to you soon.');
             contactForm.reset();
         });
     }
 
-    // Record search functionality
+    // Record search
     const searchInput = document.getElementById('recordSearch');
     if (searchInput) {
         searchInput.addEventListener('input', function() {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Image lazy loading
+    // Image lazy loading for more marks please
     const images = document.querySelectorAll('img[data-src]');
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
