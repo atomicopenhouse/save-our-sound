@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--testing for github-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection - Save Our Sound</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\webdev\assignment5\css\skeleton.css">
+    <link rel="stylesheet" href="C:\webdev\assignment5\css\personal.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Save Our Sound</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="collection.html" class="active">Collection</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>Our Collection</h1>
+            <p>Explore preserved pieces of Trinidad's musical history</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="one-half column">
+                    <input type="text" id="recordSearch" placeholder="Search records by artist or title..." class="u-full-width">
+                </div>
+                <div class="one-half column">
+                    <select id="genreFilter" class="u-full-width">
+                        <option value="">All Genres</option>
+                        <option value="calypso">Calypso</option>
+                        <option value="soca">Soca</option>
+                        <option value="steelpan">Steelpan</option>
+                        <option value="gospel">Gospel</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+    <div class="container">
+        <div class="row" id="recordGrid">
+            <div class="one-third column">
+                <div class="record-card">
+                    <div class="record-image"></div>
+                    <h4>Sparrow Come Back</h4>
+                    <p class="artist">The Mighty Sparrow</p>
+                    <p class="genre">Calypso • 1966</p>
+                    <p class="condition">Very Good Condition</p>
+                </div>
+            </div>
+            <div class="one-third column">
+                <div class="record-card">
+                    <div class="record-image"></div>
+                    <h4>Kitch's Classics</h4>
+                    <p class="artist">Lord Kitchener</p>
+                    <p class="genre">Calypso • 1972</p>
+                    <p class="condition">Good Condition</p>
+                </div>
+            </div>
+            <div class="one-third column">
+                <div class="record-card">
+                    <div class="record-image"></div>
+                    <h4>Bassman</h4>
+                    <p class="artist">Shadow</p>
+                    <p class="genre">Soca • 1974</p>
+                    <p class="condition">Excellent Condition</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Save Our Sound. Preserving Trinidad's Musical Heritage.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
