@@ -441,16 +441,27 @@ p {
     color: var(--accent-gold);
 }
 
-#contactForm select#subject {
-    background-color: #1a1a1a !important;
-    color: #f0f0f0 !important;
-    border: 2px solid #444 !important;
+#subject {
+    background-color: var(--primary-red) !important;
+    color: var(--text-light) !important;
+    border: 2px solid var(--accent-gold) !important;
 }
 
-#contactForm select#subject option {
-    background-color: #1a1a1a !important;
-    color: #f0f0f0 !important;
-    padding: 12px;
+#subject option {
+    background-color: var(--primary-red) !important;
+    color: var(--text-light) !important;
+    padding: 10px !important;
+}
+
+#subject:hover {
+    background-color: var(--dark-red) !important;
+}
+
+#subject:focus {
+    background-color: var(--primary-red) !important;
+    border-color: var(--accent-gold) !important;
+    outline: none !important;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5) !important;
 }
 
 /* Contact Info */
