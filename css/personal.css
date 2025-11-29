@@ -441,6 +441,27 @@ p {
     color: var(--accent-gold);
 }
 
+#subject option {
+    background-color: #8b0000 !important;
+    color: #f0f0f0 !important;
+    font-size: 16px !important;
+    padding: 12px !important;
+}
+
+/* Firefox specific */
+@-moz-document url-prefix() {
+    #subject option {
+        background-color: #8b0000 !important;
+        color: #f0f0f0 !important;
+    }
+}
+
+/* Webkit browsers (Chrome, Safari) - may not work */
+#subject option:checked {
+    background: linear-gradient(#8b0000, #8b0000) !important;
+    color: #f0f0f0 !important;
+}
+
 /* Contact Info */
 .contact-info {
     background: var(--primary-red);
